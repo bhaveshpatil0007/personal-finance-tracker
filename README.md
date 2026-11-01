@@ -25,6 +25,9 @@ All example results use fictional data, not real financial records.
 ![Expense forecast](examples/sample-report/expense_forecast.png)
 ![Category share](examples/sample-report/category_share.png)
 
+## 📅 Project Development Duration
+- **Development Timeline:** January 2025 – February 2025
+
 ## 1. Install
 
 Use Python 3.10 or newer. Run these commands from the project root:
@@ -196,54 +199,3 @@ finance-tracker/
 │   ├── forecast.py                  # Regression, holdout, allocation
 │   ├── visualize.py                 # Noninteractive PNG charts
 │   └── cli.py                       # End-to-end command
-├── tests/test_tracker.py
-├── .gitignore
-├── LICENSE
-├── pyproject.toml
-└── README.md
-```
-
-## Testing
-
-```bash
-python -m pytest -q
-ruff check .
-```
-
-Tests cover sign conventions, income exclusion, refunds, invalid inputs, keyword precedence, monthly aggregation, exact linear trends, missing/insufficient history, nonnegative predictions, allocation rounding, and the full CLI workflow. GitHub Actions runs tests, linting, and a sample execution on Python 3.10 and 3.12.
-
-## Upload to GitHub
-
-Create an **empty** repository in GitHub, then run from this folder (replace the remote with your actual repository URL):
-
-```bash
-git init
-git add .
-git status                  # Review carefully: no real bank data should appear
-git commit -m "Add end-to-end personal finance tracker"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/personal-finance-tracker.git
-git push -u origin main
-```
-
-Suggested description: “Local Python expense tracker with rule-based categorization, spending visualizations, and a transparent linear-regression forecast.”
-
-### Privacy
-
-- Only synthetic sample data and its reports belong in the public repository.
-- `data/private/`, `reports/`, `.env`, and virtual environments are ignored.
-- Ignore rules do not protect previously tracked files or files stored elsewhere. Review `git status` and staged diffs before every commit.
-- Exported reports can contain sensitive descriptions. Do not share personal outputs; avoid opening untrusted CSV descriptions in spreadsheets that execute formulas.
-- There are no application-level bank/API/network calls; dependency installation still requires package downloads unless available locally.
-
-## Possible extensions
-
-- Add an interactive Streamlit dashboard.
-- Import multiple CSVs with bank-specific column mappings.
-- Add recurring-expense detection and merchant overrides.
-- Compare moving-average, seasonal-naive, and regression forecasts with rolling evaluation.
-- Track income, savings goals, and affordability separately from expense prediction.
-
-## License
-
-MIT. See `LICENSE`.
