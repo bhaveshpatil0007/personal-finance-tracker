@@ -1,0 +1,46 @@
+{
+  "Rent": [
+    "rent",
+    "landlord",
+    "property management"
+  ],
+  "Food": [
+    "grocery",
+    "supermarket",
+    "restaurant",
+    "cafe",
+    "coffee",
+    "pizza",
+    "whole foods"
+  ],
+  "Transport": [
+    "uber",
+    "lyft",
+    "transit",
+    "metro",
+    "gas station"
+  ],
+  "Utilities": [
+    "electric",
+    "water bill",
+    "internet",
+    "utility"
+  ],
+  "Entertainment": [
+    "netflix",
+    "spotify",
+    "cinema",
+    "concert",
+    "steam"
+  ],
+  "Shopping": [
+    "amazon",
+    "clothing",
+    "bookstore"
+  ],
+  "Health": [
+    "pharmacy",
+    "clinic",
+    "dentist"
+  ]
+}

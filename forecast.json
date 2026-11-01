@@ -1,0 +1,27 @@
+{
+  "forecast_month": "2025-07",
+  "history_start": "2024-01",
+  "history_end": "2025-06",
+  "months_used": 18,
+  "model": "LinearRegression(month_index -> net_expenses)",
+  "predicted_expenses": 2181.37,
+  "raw_prediction": 2181.37,
+  "monthly_trend": 9.53,
+  "evaluation": {
+    "method": "last_3_months_chronological_holdout",
+    "test_months": [
+      "2025-04",
+      "2025-05",
+      "2025-06"
+    ],
+    "linear_regression_mae": 23.2,
+    "constant_last_training_month_mae": 22.8
+  },
+  "warnings": [
+    "This is an illustrative trend forecast, not financial advice or a guaranteed budget.",
+    "Only include complete months; partial months bias the forecast downward.",
+    "A linear trend does not model seasonality, inflation, or unexpected expenses.",
+    "Linear regression underperformed the naive holdout baseline."
+  ],
+  "currency": "USD"
+}
